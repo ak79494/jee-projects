@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>login</title>
+<style>
+.body{
+font-family: Arial, Helvetica, sans-serif;
+}
+.input-box{
+   width: 200px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+}
+#button{
+width: 150px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+}
+.login-container {
+max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="login-container">
+<form action="LoginServlet" method="post">
+
+<h1 align="center">login</h1>
+<h4 align="center">
+<labelfor="username">Username:</label>
+<br>
+<input type="user" placeholder="username", name="user" class="input-box">
+<br>
+<labelfor="password">Password:</label>
+<br>
+<input type="password" placeholder="password", name="password" class="input-box">
+<br>
+<button id="button"type="submit">Login</button>
+</h4>
+</form>
+</div>
+</body>
+</html>
