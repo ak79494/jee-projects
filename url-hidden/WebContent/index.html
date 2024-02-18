@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>URL-Hidden</title>
+<style>
+.login-container{
+ width: 250px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+           
+}
+.input-box{
+   width: 200px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;           
+}
+#button{
+width: 150px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h1 align="center">WELCOME TO MY APPLICATION</h1>
+<a href="MyServlet?user=arun">Link</a>
+<div align="center"class="login-container">
+<form action="UpdateServlet" method="post">
+<h2 align="center">
+<h2>UPDATE DATA</h2>
+<input type="hidden" value="101" name="id" class="input-box">
+<br>
+<input type="text" value="Arun" name="name" class="input-box">
+<br>
+<input type="number" value="24" name="age" class="input-box">
+<br>
+<input type="text" value="Dhanbad-Jharkhand" name="address" class="input-box">
+<br>
+<input type="submit" value="update" id="button">
+</form>
+</div>
+</body>
+</html>
